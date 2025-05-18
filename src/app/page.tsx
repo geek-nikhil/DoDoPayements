@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products`, {
+        const response = await fetch(`https://do-do-payements-4giiz7j9g-geek-nikhils-projects.vercel.app/api/products`, {
           cache: 'no-store'
         });
         const data = await response.json();
